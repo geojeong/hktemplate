@@ -4,13 +4,12 @@
 Files:
 
 - hktem.sty: style file
-- hktem_main.tex: sample main file
+- main.tex: sample main file
 
 How to compile:
 
 - Use XeLaTeX or LuaLaTeX
-- In Overleaf: Menu -> Compiler -> XeLaTeX
-- Locally: xelatex hktem_main.tex
+- Locally: `xelatex main.tex`
 
 Notes:
 
