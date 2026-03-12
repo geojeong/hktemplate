@@ -1,15 +1,15 @@
 \documentclass[10pt,twocolumn,letterpaper]{article}
 \usepackage{hktem}
 
-\title{보고서 제목}
+\title{이층 완전연결 신경망을 이용한 MNIST 분류}
 \author{정상혁\\고려대학교 지리교육과\\\email{nacl31566@korea.ac.kr}}
 
 \begin{document}
 \maketitle
-
-\begin{abstract}
+\noindent{\centering \large\bfseries 초록\par}
+\small
 이 템플릿은 CVPR 형식을 참고해 과제물과 짧은 보고서 작성에 맞게 단순화한 한국어 \LaTeX{} 템플릿입니다. XeLaTeX 또는 LuaLaTeX으로 컴파일하며, 본문 기본 글꼴은 나눔명조로 설정되어 있습니다.
-\end{abstract}
+\normalsize
 
 \section{Code Description}
 
@@ -21,7 +21,7 @@
 
 과제의 각주에서는 CIFAR-10을 언급하고 있지만, 이 과제에서 제공된 함수와 도구는 MNIST 데이터셋을 사용한다. 따라서 본 보고서에서 제시된 모든 결과는 MNIST 분류 결과에 기반한다. 손실을 최소화하는 하이퍼파라미터를 찾기 위해 간단한 그리드 서치를 수행하였다. 가장 성능이 좋았던 하이퍼파라미터 조합(best set)은 은닉층 크기 800, 학습률 \(5\times10^{-2}\), 학습률 감쇠율 0.95, 정규화 강도 \(5\times10^{-4}\)였다. 최종 모델은 테스트 데이터셋에서 약 88\%의 정확도를 달성하였다.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{img/output3.png}
 \caption{학습 과정에서의 훈련 손실과 분류 정확도}
